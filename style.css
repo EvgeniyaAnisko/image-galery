@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+}
+
+html {
+  min-width: 720px;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  background-color: #f50021;
+  width: 100%;
+  color: white;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-size: 100%;
+}
+a {
+  transition: 0.7s;
+}
+
+.logo:hover,
+a:hover {
+  filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%)
+    contrast(87%);
+  transition: 0.7s;
+}
+.logo {
+  background-image: url(.//assets/svg/logo.svg);
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  padding-left: 10px;
+  transition: 0.7s;
+}
+
+.hedader-wrapper {
+  display: flex;
+  align-items: center;
+}
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.7s;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #dddddd;
+  color: brown;
+}
+input:focus {
+  box-shadow: 0 0 5px rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gallery-img {
+  width: 330px;
+  height: 220px;
+  margin-top: 15px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+
+  transition: 0.7s;
+}
+.gallery-img:hover {
+  border-radius: 20%;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.container {
+  width: 1280px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  align-items: center;
+  align-content: center;
+  width: inherit;
+}
+footer {
+  padding-top: 10px;
+}
+.footer-data {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-item {
+  justify-content: flex-end;
+  padding-left: 10px;
+}
+.git {
+  width: 40px;
+  height: 40px;
+}
+.rs {
+  width: 70%;
+  height: 70%;
+}
+
+@media (max-width: 768px) {
+
+  .img {
+    width: 100%;
+    height: auto;
+  }
+
+  header {
+    margin: 10px 0;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  header,
+  .h1 {
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header .h1 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  input {
+    font-size: 0.7rem;
+  }
+} 
